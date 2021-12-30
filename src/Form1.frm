@@ -133,7 +133,7 @@ Private Sub Form_Load()
     Label1.Caption = stdIn
     If FolderExists(stdIn) = False Then
         Label1.ForeColor = vbRed
-        Label1.Caption = "Ошибка пути. Нет такой папки: " + Label1.Caption
+        Label1.Caption = "РћС€РёР±РєР° РїСѓС‚Рё. РќРµС‚ С‚Р°РєРѕР№ РїР°РїРєРё: " + Label1.Caption
         ListView1.Enabled = False
         Command3.Enabled = False
     End If
@@ -145,18 +145,18 @@ Private Sub Form_Load()
     ' MyDict.Add("Three", New List(Of Double)(New Double() {3.5, 2.4, 16.9}))
     Dim Dict As Dictionary
     Set Dict = New Dictionary
-    Dict.Add "axis", "Акты разбивки"
-    Dict.Add "credo", "Файлы CredoDAT"
-    Dict.Add "doc", "Документы по объекту"
+    Dict.Add "axis", "РђРєС‚С‹ СЂР°Р·Р±РёРІРєРё"
+    Dict.Add "credo", "Р¤Р°Р№Р»С‹ CredoDAT"
+    Dict.Add "doc", "Р”РѕРєСѓРјРµРЅС‚С‹ РїРѕ РѕР±СЉРµРєС‚Сѓ"
     Dict.Add "dwg", "Autocad DWG"
-    Dict.Add "egrn", "Выписки ЕГРН"
-    Dict.Add "foto", "Фотографии"
-    Dict.Add "kpt", "Выписки КПТ"
+    Dict.Add "egrn", "Р’С‹РїРёСЃРєРё Р•Р“Р Рќ"
+    Dict.Add "foto", "Р¤РѕС‚РѕРіСЂР°С„РёРё"
+    Dict.Add "kpt", "Р’С‹РїРёСЃРєРё РљРџРў"
     Dict.Add "map", "MapInfo"
-    Dict.Add "pdf", "PDF файлы для печати"
-    Dict.Add "proj", "Проектная документация"
-    Dict.Add "sat", "Спутниковые снимки"
-    Dict.Add "src", "Полевые измерения"
+    Dict.Add "pdf", "PDF С„Р°Р№Р»С‹ РґР»СЏ РїРµС‡Р°С‚Рё"
+    Dict.Add "proj", "РџСЂРѕРµРєС‚РЅР°СЏ РґРѕРєСѓРјРµРЅС‚Р°С†РёСЏ"
+    Dict.Add "sat", "РЎРїСѓС‚РЅРёРєРѕРІС‹Рµ СЃРЅРёРјРєРё"
+    Dict.Add "src", "РџРѕР»РµРІС‹Рµ РёР·РјРµСЂРµРЅРёСЏ"
 
     Debug.Print "List clicked"
     
@@ -164,8 +164,8 @@ Private Sub Form_Load()
         Dim itmX As ListItem ' Create a variable to add ListItem objects.
         Dim clmX As ColumnHeader ' Create an object variable for the ColumnHeader object.
         ' Add ColumnHeaders.
-        Set clmX = .ColumnHeaders.Add(, , "Папка", .Width / 5)
-        Set clmX = .ColumnHeaders.Add(, , "Описание", .Width * 4 / 5)
+        Set clmX = .ColumnHeaders.Add(, , "РџР°РїРєР°", .Width / 5)
+        Set clmX = .ColumnHeaders.Add(, , "РћРїРёСЃР°РЅРёРµ", .Width * 4 / 5)
         .BorderStyle = ccFixedSingle ' Set BorderStyle property.
         .View = lvwReport ' Set View property to Report.
     
